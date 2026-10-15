@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore career opportunities at Exon Technologies and apply for open roles." />
+  <title>Careers | Exon Technologies</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="careers.css" />
+  <script src="scripts.js" defer></script>
+  <script src="careers.js" defer></script>
+</head>
+<body id="top">
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html#home" class="logo" aria-label="Exon Technologies home">
+        <span class="logo-mark">E</span>
+        <span class="logo-name">exon<span>technologies</span></span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="index.html#about" class="nav-link">About Us</a>
+        <a href="index.html#projects" class="nav-link">Projects</a>
+        <a href="careers.html" class="nav-link active" aria-current="page">Careers</a>
+      </nav>
+
+      <a href="#open-roles" class="header-button">
+        View Open Roles <span>↘</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="careers-hero">
+      <div class="container careers-hero-content">
+        <p class="eyebrow"><span class="eyebrow-line"></span>CAREERS AT EXON</p>
+        <h1>Build what <span>comes next.</span></h1>
+        <p>
+          Join a curious, collaborative team creating thoughtful digital products
+          and practical technology for growing businesses.
+        </p>
+        <a href="#open-roles" class="button-primary">Explore open roles <span>↓</span></a>
+      </div>
+      <div class="careers-hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <section class="section careers-section" id="open-roles">
+      <div class="container">
+        <p class="eyebrow"><span class="eyebrow-line"></span>OPEN OPPORTUNITIES</p>
+        <div class="section-heading">
+          <h2>Find your next<br />opportunity.</h2>
+          <p>Explore our current openings and apply for the role that fits your strengths.</p>
+        </div>
+
+        <div class="vacancy-list">
+          <article class="vacancy-card">
+            <div class="vacancy-number">01</div>
+            <div class="vacancy-details">
+              <h3>Frontend Developer</h3>
+              <p>Build responsive, accessible interfaces and bring product designs to life.</p>
+              <div class="vacancy-tags">
+                <span>Engineering</span><span>Full-time</span><span>Remote-friendly</span>
+              </div>
+            </div>
+            <button class="vacancy-apply" type="button" data-apply="frontend-developer">
+              Apply now <span>↗</span>
+            </button>
+          </article>
+
+          <article class="vacancy-card">
+            <div class="vacancy-number">02</div>
+            <div class="vacancy-details">
+              <h3>UI/UX Designer</h3>
+              <p>Shape clear, useful product experiences through research, prototyping, and design.</p>
+              <div class="vacancy-tags">
+                <span>Design</span><span>Full-time</span><span>Hybrid</span>
+              </div>
+            </div>
+            <button class="vacancy-apply" type="button" data-apply="ui-ux-designer">
+              Apply now <span>↗</span>
+            </button>
+          </article>
+
+          <article class="vacancy-card">
+            <div class="vacancy-number">03</div>
+            <div class="vacancy-details">
+              <h3>Software Engineer</h3>
+              <p>Develop reliable application features and help solve meaningful customer problems.</p>
+              <div class="vacancy-tags">
+                <span>Engineering</span><span>Full-time</span><span>Hybrid</span>
+              </div>
+            </div>
+            <button class="vacancy-apply" type="button" data-apply="software-engineer">
+              Apply now <span>↗</span>
+            </button>
+          </article>
+        </div>
+        <p class="vacancy-note">These are example vacancies for the website demo.</p>
+      </div>
+    </section>
+
+    <section class="section candidate-section" id="candidate-account">
+      <div class="container candidate-layout">
+        <div class="candidate-intro">
+          <p class="eyebrow"><span class="eyebrow-line"></span>CANDIDATE PORTAL</p>
+          <h2>Your next step<br />starts here.</h2>
+          <p>Create a demo account to apply for roles and see your submitted applications.</p>
+          <p class="demo-notice">
+            Demo only: account details and applications stay in this browser and are not sent to Exon.
+            Do not use a real or reused password. This static site does not provide secure authentication.
+          </p>
+        </div>
+
+        <div class="candidate-panel">
+          <div id="authPanel">
+            <div class="auth-tabs" role="tablist" aria-label="Candidate account">
+              <button class="auth-tab active" id="loginTab" type="button" role="tab" aria-selected="true" aria-controls="loginForm">
+                Log in
+              </button>
+              <button class="auth-tab" id="registerTab" type="button" role="tab" aria-selected="false" aria-controls="registerForm">
+                Create account
+              </button>
+            </div>
+
+            <form id="loginForm" class="auth-form" novalidate>
+              <h3>Welcome back</h3>
+              <label for="loginEmail">Email address</label>
+              <input id="loginEmail" name="email" type="email" autocomplete="email" required />
+              <label for="loginPassword">Password</label>
+              <input id="loginPassword" name="password" type="password" autocomplete="current-password" required />
+              <button class="button-primary auth-submit" type="submit">Log in <span>→</span></button>
+            </form>
+
+            <form id="registerForm" class="auth-form" hidden novalidate>
+              <h3>Create your account</h3>
+              <label for="registerName">Full name</label>
+              <input id="registerName" name="name" type="text" autocomplete="name" maxlength="100" required />
+              <label for="registerEmail">Email address</label>
+              <input id="registerEmail" name="email" type="email" autocomplete="email" required />
+              <label for="registerPassword">Password <span class="field-hint">(at least 8 characters)</span></label>
+              <input id="registerPassword" name="password" type="password" autocomplete="new-password" minlength="8" required />
+              <button class="button-primary auth-submit" type="submit">Create account <span>→</span></button>
+            </form>
+            <p class="form-status" id="authStatus" role="status" aria-live="polite"></p>
+          </div>
+
+          <div id="candidateDashboard" hidden>
+            <div class="dashboard-heading">
+              <div>
+                <p class="dashboard-kicker">CANDIDATE ACCOUNT</p>
+                <h3 id="candidateWelcome">Welcome</h3>
+              </div>
+              <button class="logout-button" id="logoutButton" type="button">Log out</button>
+            </div>
+            <h4>Your applications</h4>
+            <ul class="application-list" id="applicationList"></ul>
+            <p class="application-empty" id="applicationEmpty">You have not applied for any roles yet.</p>
+            <p class="form-status" id="dashboardStatus" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="application-dialog" id="applicationDialog" aria-labelledby="applicationTitle">
+    <form id="applicationForm" class="application-form" novalidate>
+      <button class="dialog-close" type="button" id="closeApplication" aria-label="Close application form">×</button>
+      <p class="eyebrow"><span class="eyebrow-line"></span>JOB APPLICATION</p>
+      <h2 id="applicationTitle">Apply for this role</h2>
+      <p class="application-role" id="applicationRole"></p>
+      <label for="applicationName">Full name</label>
+      <input id="applicationName" name="name" type="text" maxlength="100" required />
+      <label for="applicationEmail">Email address</label>
+      <input id="applicationEmail" name="email" type="email" required />
+      <label for="applicationMessage">A short introduction</label>
+      <textarea id="applicationMessage" name="message" rows="5" maxlength="1200" placeholder="Tell us briefly why you are interested." required></textarea>
+      <p class="form-status" id="applicationStatus" role="status" aria-live="polite"></p>
+      <button class="button-primary auth-submit" type="submit">Submit demo application <span>↗</span></button>
+      <p class="dialog-note">This demo application is saved only in your browser.</p>
+    </form>
+  </dialog>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="index.html#home" class="logo footer-logo" aria-label="Exon Technologies home">
+        <span class="logo-mark">E</span>
+        <span class="logo-name">exon<span>technologies</span></span>
+      </a>
+      <p>© <span id="year"></span> Exon Technologies. All rights reserved.</p>
+      <a href="#top" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
